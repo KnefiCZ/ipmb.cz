@@ -1,0 +1,93 @@
+@use "var";                      // VARIABLES
+
+
+// --------------------------------------
+//   FULLPAGE
+// --------------------------------------
+//
+
+// navigation - strat
+#fp-nav.fp-right {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+#fp-nav ul li{
+    width: 14px;
+    height: 14px;
+    margin: 16px 7px;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 10px;
+    width: 10px;
+    border: 0;
+    background: rgb(255, 255, 255);
+    left: 50%;
+    top: 50%;
+    margin: -5px 0 0 -5px;
+}
+
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
+    height: 20px;
+    width: 20px;
+    margin: -10px 0 0 -10px;
+    border-radius: 100%;
+}
+// navigation - end
+
+.homepage {
+
+    &__s1 {
+        background: grey url(../images/hp-01.jpg) no-repeat center center/cover;
+    }
+
+    &__s2 {
+        background: grey url(../images/hp-02.jpg) no-repeat center center/cover;
+    }
+    &__s3 {
+        background: grey url(../images/hp-03.jpg) no-repeat center center/cover;
+    }
+    &__s4 {
+        background: grey url(../images/hp-04.jpg) no-repeat center center/cover;
+    }
+}
+
+.detail {
+
+    &__s1 {
+        background: grey url(../images/detail-01.jpg) no-repeat bottom center/cover;
+    }
+    &__s2 {
+        background: grey url(../images/detail-02.jpg) no-repeat bottom center/cover;
+    }
+    &__s3 {
+        background: grey url(../images/detail-06.jpg) no-repeat bottom center/cover;
+    }
+    &__s4 {
+        background: grey url(../images/detail-08.jpg) no-repeat bottom center/cover;
+    }
+}
+
+.areal-ipmb {
+
+    &__s1 {
+        background: grey url(../images/areal-ipmb-01.jpg) no-repeat bottom center/cover;
+    }
+    &__s2 {
+        background: grey url(../images/areal-ipmb-02.jpg) no-repeat bottom center/cover;
+    }
+    &__s3 {
+        background: grey url(../images/areal-ipmb-06.jpg) no-repeat bottom center/cover;
+    }
+    &__s4 {
+        background: grey url(../images/areal-ipmb-07.jpg) no-repeat bottom center/cover;
+    }
+    &__s5 {
+        background: grey url(../images/areal-ipmb-10.jpg) no-repeat bottom center/cover;
+    }
+}

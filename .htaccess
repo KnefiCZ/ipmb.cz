@@ -1,0 +1,20 @@
+#zapnout rewrite
+RewriteEngine On
+RewriteBase /
+
+#HTTPS
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#patch
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^.*$ ./index.php
+
+#no www na www variantu
+#RewriteCond %{HTTP_HOST} ^example.com
+#RewriteRule (.*) https://example.com/ [R=301,QSA,L]
+
+#chyby
+ErrorDocument 404 /page_404.php
+

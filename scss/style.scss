@@ -1,0 +1,67 @@
+@use "var";                 // VARIABLES
+@use "general";             // GENERAL - Body | bg, bg-title |list style | box padding
+@use "header";              // HEADER - logo | menu
+@use "footer";              // FOOTER
+@use "btn";                 // BUTTON - btn | corner-btn | line-arrow
+@use "typography";          // TYPOGRAPHY
+@use "form";                // FORM
+@use "slider";              // SLIDER - slider-gallery | slider-item | slider/carousel icon
+@use "fullpage";            // FULLPAGE
+
+@use "content";            // CONTENT - label | content | img-box | realizace.html | box-card | contact-box | tag | gallery__content
+
+
+//fancybox
+.fancybox__thumbs .carousel__slide .fancybox__thumb::after{
+    border: 2px solid var.$color-secondary;
+}
+
+.fancybox__progress {
+    background: var.$color-secondary;
+}
+
+.has-video .fancybox__content {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: transparent !important;
+}
+
+.fancybox__iframe:focus {
+    outline: none !important;
+}
+
+.fancybox__iframe {
+    outline: none !important;
+    &:focus, 
+    &:active {
+       outline: none !important;
+    }
+}
+
+// rocenka - start
+.rocenka {
+    z-index: 400;
+    & img {
+        width: 90%;
+        @media screen and (min-width: 768px) {
+            width: 70%;
+        }
+    }
+}
+// rocenka - end
+
+// background - stavime
+.bg-stavime {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: grey url(../images/stavime-01.jpg) no-repeat bottom center/cover;
+}
+
+// google map
+.google-map {
+    display: block;
+    width: 100%;
+    height: 450px;
+}
+

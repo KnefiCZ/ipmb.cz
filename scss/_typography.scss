@@ -1,0 +1,107 @@
+@use "var";                      // VARIABLES
+
+
+// --------------------------------------
+//   TYPOGRAPHY
+// --------------------------------------
+//
+
+.h-1 {
+    z-index: 2000;
+    font-size: 45px;
+    font-weight: var.$font-bold;
+    color: var.$color-white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+
+    &--grey {
+        color: #C2C2C2;
+    }
+
+    &--dark {
+        color: var.$color-primary;
+    }
+
+    @media screen and (min-width: 576px) {
+        font-size: 50px;
+    }
+    @media screen and (min-width: 992px) {
+        font-size: 65px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 72px;
+    }
+    @media screen and (min-width: 1400px) {
+        font-size: 80px;
+    }
+
+    &__slide {
+        @media screen and (min-width: 576px) {
+            font-size: 65px;
+            -webkit-text-stroke-width: 2px;
+        }
+        @media screen and (min-width: 992px) {
+            font-size: 70px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 80px;
+        }
+        @media screen and (min-width: 1400px) {
+            font-size: 100px;
+        }
+        @media screen and (min-width: 1550px) {
+            font-size: 120px;
+        }
+    }
+}
+
+.h-2 {
+    font-size: 40px;
+    font-weight: var.$font-bold;
+
+    @media screen and (min-width: 576px) {
+        font-size: 48px;
+    }
+    @media screen and (min-width: 992px) {
+        font-size: 64px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 72px;
+    }
+    
+    &--small {
+        font-size: 40px;
+        @media screen and (min-width: 992px) {
+            font-size: 60px;
+        }
+    }
+}
+
+.h-3 {
+    font-size: 22px;
+    font-weight: var.$font-bold;
+
+    &--light {
+        color: var.$color-white;
+    }
+    &--rotate {
+        position: absolute;
+        top: 40%;
+        right: -65px;
+        transform: rotate(-90deg);
+        margin: 0;
+        padding: 0;
+    }
+    @media screen and (min-width: 576px) {
+        font-size: 28px;
+    }
+}
+
+.h-4 {
+    font-size: 20px;
+    font-weight: var.$font-bold;
+}
+
+.p--light {
+    color: var.$color-white;
+}

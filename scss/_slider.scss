@@ -1,0 +1,157 @@
+@use "var";                      // VARIABLES
+
+
+// --------------------------------------
+//   SLIDER
+// --------------------------------------
+//
+
+////////////////////////
+// SLIDER - start
+////////////////////////
+.slick-slide {
+    margin: 0px 8px;
+}
+
+// slider - Gallery
+.slider-gallery {
+    width: 100%;
+    margin: 0 0 0 auto;
+    @media screen and (min-width: 768px) {
+        width: 60%;
+        margin: 0 0 0 auto;
+    }
+
+    &__img {
+        width: 240px;
+
+        @media screen and (min-width: 576px) {
+            width: 320px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 380px;
+        }
+        @media screen and (min-width: 992px) {
+            width: 400px;
+            padding: 40px 0 50px 0;
+        }
+    }
+}
+
+// slider - Dalsi realizace
+.slider-item {
+    margin: 0 0 0 auto;
+
+    &__content {
+        position: relative;
+        background-color: var.$color-white;
+        color: var.$color-primary;
+        border-radius: 8px;
+        overflow: hidden;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+
+        &:hover,
+        &:hover .slider-item__link{
+            color: var.$color-white;
+            background-color: var.$color-secondary;
+            background-image: url(../images/bg-secondary.svg);
+            background-repeat: repeat;
+            background-size: 280px 280px;
+        }
+
+        &:hover img {
+            transform: scale(1.03);
+        }
+    }
+
+    &__img {
+        width: 300px;
+        overflow: hidden;
+
+        & img {
+            transition: transform 0.5s;
+        }
+
+        @media screen and (min-width: 576px) {
+            width: 360px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 400px;
+        }
+        @media screen and (min-width: 992px) {
+            width: 420px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 520px;
+        }
+        @media screen and (min-width: 1400px) {
+            width: 600px;
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: var.$font-bold;
+        margin: 0;
+        color: var.$color-primary;
+        padding: 16px 24px;
+
+        @media screen and (min-width: 576px) {
+            font-size: 24px;
+        }
+        @media screen and (min-width: 992px) {
+            font-size: 28px;
+            padding: 24px 32px;
+        }
+    }
+
+    &__ribbon {
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 16px;
+        background-color: var.$color-secondary;
+        font-size: 18px;
+        color: var.$color-white;
+        font-weight: var.$font-bold;
+        border-radius: 0  0 8px 0;
+    }
+}
+
+/// slider/carousel icon - strat
+.carousel-next,
+.carousel-prev {
+    z-index: 100;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    text-align: center;
+    background: var.$color-white;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    opacity: 1;
+    //transition: opacity .15s ease;
+    margin: 0 5px;
+}
+.carousel-next-icon,
+.carousel-prev-icon {
+    z-index: 100;
+    width: 35px;
+    height: 20px;
+    display: inline-block;
+}
+
+.carousel-next-icon {
+    background-image: url(../images/right-arrow.svg);
+}
+
+.carousel-prev-icon {
+    background-image: url(../images/left-arrow.svg);
+}
+/// carousel icon - end
+
+////////////////////////
+// SLIDER - end
+////////////////////////
