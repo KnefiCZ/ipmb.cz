@@ -19,7 +19,8 @@ function generate_anchors($count) {
     for ($i = 0; $i < $count; $i++) {
 
         if ( $i != ($count - 1) ) { $sections .= "'section" . ($i + 1) . "', "; }
-        elseif ( $i == ($count - 1) ) { $sections .= "'section" . ($i + 1) . "'"; }
+        elseif ( $i == ($count - 1) ) { $sections .= "'realizace00" . "', 'footer'"; }
+        // elseif ( $i == ($count - 1) ) { $sections .=  "'realizace', 'footer'"; }
 
     }
 

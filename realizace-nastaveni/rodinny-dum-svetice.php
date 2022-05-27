@@ -254,7 +254,7 @@ require_once ('_top.php');
 
 
     <?php
-    $number_of_slides = "realizace";
+    $number_of_slides++;
     ?>
     <!-- section9 - start -->
     <?php realizace_slider(
@@ -262,9 +262,7 @@ require_once ('_top.php');
         btn: [
             'Prohlédnout si všechny realizace', '/realizace/'
         ],
-
-        url2: $url2,
-        slide: $number_of_slides,
+        slide: 'realizace',
 
     ); ?>
     <!-- section9 - end -->

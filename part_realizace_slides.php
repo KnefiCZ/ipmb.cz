@@ -846,7 +846,6 @@ function realizace_slider(
     ],
     $url2 = 'url-not-found',
     $arrow = false,
-    $slide = "realizace",
     ) {
         $render = new Render();
     ?>

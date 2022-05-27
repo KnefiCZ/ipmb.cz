@@ -188,8 +188,11 @@ if ( isset($fullpage) && $fullpage != '' ) {
         })
     </script>
     <style>
-        body.fp-viewing-null #fp-nav{
-            display:none !important;
+        body.fp-viewing-realizace00 #fp-nav{
+            display: none !important;
+        }
+        body.fp-viewing-footer #fp-nav{
+            display: none !important;
         }
     </style>
     <?php
